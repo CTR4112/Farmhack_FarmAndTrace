@@ -194,7 +194,6 @@ namespace FarmAndTrace.Migrations
                     Longitude = table.Column<float>(type: "float", nullable: false),
                     Latitude = table.Column<float>(type: "float", nullable: false),
                     Unit = table.Column<float>(type: "float", nullable: false),
-                    OrderId = table.Column<long>(type: "bigint", nullable: false),
                     ClientId = table.Column<long>(type: "bigint", nullable: false),
                     ProductId = table.Column<long>(type: "bigint", nullable: false)
                 },

@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FarmAndTrace.Migrations
 {
     [DbContext(typeof(FarmAndTraceContext))]
-    [Migration("20211216105037_InitialCreate")]
+    [Migration("20211216134936_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -17,7 +17,7 @@ namespace FarmAndTrace.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 64)
-                .HasAnnotation("ProductVersion", "5.0.5");
+                .HasAnnotation("ProductVersion", "5.0.12");
 
             modelBuilder.Entity("FarmAndTrace.Model.Client", b =>
                 {
@@ -75,9 +75,6 @@ namespace FarmAndTrace.Migrations
 
                     b.Property<float>("Longitude")
                         .HasColumnType("float");
-
-                    b.Property<long>("OrderId")
-                        .HasColumnType("bigint");
 
                     b.Property<long>("ProductId")
                         .HasColumnType("bigint");

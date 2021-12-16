@@ -14,9 +14,6 @@ namespace FarmAndTrace.Model
         public float Longitude { get; private set; }
         public float Latitude { get; private set; }
         public float Unit { get; private set; }
-        
-        [Required]
-        public long OrderId { get; set; }
 
         public long ClientId { get; set; }
 

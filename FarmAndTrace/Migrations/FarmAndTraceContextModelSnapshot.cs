@@ -15,7 +15,7 @@ namespace FarmAndTrace.Migrations
 #pragma warning disable 612, 618
             modelBuilder
                 .HasAnnotation("Relational:MaxIdentifierLength", 64)
-                .HasAnnotation("ProductVersion", "5.0.5");
+                .HasAnnotation("ProductVersion", "5.0.12");
 
             modelBuilder.Entity("FarmAndTrace.Model.Client", b =>
                 {
@@ -73,9 +73,6 @@ namespace FarmAndTrace.Migrations
 
                     b.Property<float>("Longitude")
                         .HasColumnType("float");
-
-                    b.Property<long>("OrderId")
-                        .HasColumnType("bigint");
 
                     b.Property<long>("ProductId")
                         .HasColumnType("bigint");
